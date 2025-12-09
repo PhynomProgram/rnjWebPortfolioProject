@@ -1,0 +1,126 @@
+/*Colors: */ 
+/*Color Theme Swatches in Hex */
+.Milestone-3-1-hex { color: #595959; } /*Asphalt*/
+.Milestone-3-2-hex { color: #363636; } /*Dark Smoke*/
+.Milestone-3-3-hex { color: #483447; } /*Smoked Purple*/
+.Milestone-3-4-hex { color: #55C7D6; } /*Dark Aqua*/
+.Milestone-3-5-hex { color: #DAE4E9; } /*Pale*/
+.Milestone-3-6-hex { color: #8856FA; } /*Electric Purple*/
+.Milestone-3-7-hex { color: #FFFFFF; } /*White*/
+.Milestone-3-8-hex { color: #21A3FA; } /*Deep Bright Sky*/
+.Milestone-3-9-hex { color: #592A93; } /*Bright Deep Violet*/
+
+/* Color Theme Swatches in RGBA */
+.Milestone-3-1-rgba { color: rgba(89, 89, 89, 1); }
+.Milestone-3-2-rgba { color: rgba(54, 54, 54, 1); }
+.Milestone-3-3-rgba { color: rgba(72, 52, 71, 1); }
+.Milestone-3-4-rgba { color: rgba(85, 199, 214, 1); }
+.Milestone-3-5-rgba { color: rgba(218, 228, 233, 1); }
+.Milestone-3-6-rgba { color: rgba(136, 86, 250, 1); }
+.Milestone-3-7-rgba { color: rgba(255, 255, 255, 1); }
+.Milestone-3-8-rgba { color: rgba(33, 163, 250, 1); }
+.Milestone-3-9-rgba { color: rgba(89, 42, 147, 1); }
+
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial,"Source Sans Pro", sans-serif;
+    font-weight: normal;
+    background-color: #363636;
+    color: #8856FA;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    font-family: Arial,"Source Sans Pro", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: blue;
+}
+
+.portrait {
+  display: block;
+  position: relative;
+  margin: auto;
+  height: 500px;
+  width: 500px;
+  
+}
+
+/* Nav */
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.blocker {
+  background-color: #592A93;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: -2;
+}
+
+img {
+    display: block;
+    margin: auto;
+    opacity: 0.6;
+    width: 100%;
+    border-radius: 100%;
+    z-index: 1;
+    transition: scale .6s;
+}
+
+img:hover {
+    scale: 1.05;
+}
+
+.color-slider {
+  display: block;
+  border-radius: 300px;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  left: 10px;
+  transform-origin: top right;
+  animation: 6s infinite slide;
+  z-index: -1;
+  background: radial-gradient(white, #60a5fa);
+}
+
+@keyframes slide {
+  0% {
+    left: -100px;
+    top: 0px;
+  }
+  40% {
+    left: 180px;
+    top: 200px;
+    height: 25%;
+    width: 25%;
+  }
+  50% {
+    left: 180px;
+    top: 200px;
+    height: 25%;
+    width: 25%;
+  }
+  100% {
+    left: 280px;
+    top: 220px;
+    height: 0;
+    width: 0;
+  }
+}
