@@ -20,6 +20,7 @@
 .Milestone-3-7-rgba { color: rgba(255, 255, 255, 1); }
 .Milestone-3-8-rgba { color: rgba(33, 163, 250, 1); }
 .Milestone-3-9-rgba { color: rgba(89, 42, 147, 1); }
+/*---- END ----*/
 
 body {
   overflow: hidden;
@@ -73,6 +74,8 @@ nav a {
   z-index: -2;
 }
 
+
+/* My Portrait*/
 img {
     display: block;
     margin: auto;
@@ -87,11 +90,11 @@ img:hover {
     scale: 1.05;
 }
 
-.color-slider {
+.moving-circle {
   display: block;
   border-radius: 300px;
-  height: 50%;
-  width: 50%;
+  height: 0;
+  width: 0;
   position: absolute;
   left: 10px;
   transform-origin: top right;
@@ -102,20 +105,20 @@ img:hover {
 
 @keyframes slide {
   0% {
-    left: -100px;
+    left: 0px;
     top: 0px;
   }
   40% {
-    left: 180px;
-    top: 200px;
-    height: 25%;
-    width: 25%;
+    left: 150px;
+    top: 100px;
+    height: 50%;
+    width: 50%;
   }
   50% {
-    left: 180px;
-    top: 200px;
-    height: 25%;
-    width: 25%;
+    left: 150px;
+    top: 100px;
+    height: 50%;
+    width: 50%;
   }
   100% {
     left: 280px;
