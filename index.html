@@ -9,28 +9,35 @@ GitHub Repo: https://github.com/PhynomProgram/rnjWebPortfolioProject.git
 
         <!-- Load external CSS styles -->
         <link rel="stylesheet" href="css/styles.css">
-        
     </head>
     <body>
-        <h1>Rashad Jackson's Web Development Portfolio</h1>          
         <nav id="navcontainer">
-            <!-- Navigation built by navigation.js -->    
+                <!-- Navigation built by navigation.js -->    
         </nav>
-        <main>
-            <p>It is my enthusiasm that drives me to participate in the process of leveraging web technology to deliver engaging content that arms users with the information they need to accomplish their goals.</p>
-        </main>
+        <div class="grid-container">
+            <h1 id="primary-header">Rashad Jackson's<br>Web Developer<br>Portfolio</h1>
+            <div id="secondary-header">
+                <h2>Welcome!</h2>
+            </div>
+            <main>
+                <p id="objective-statement">
+                    <span id="objective-title">My objective</span><br><span id="objective-text">Leverage technology to deliver a visually and viscerally engaging web experience and content that arms users with the information they need to accomplish their goals</span>
+                </p>
+            </main>
+            <footer>
+                <div class="footer-text">&copy; 2025 Rashad Jackson</div>
+            </footer>
+        </div>
         <div id="portrait-container">
             <div class="card">
                 <img id="portrait" class="heroImage" src="assets/myPortrait.png" alt="Graphically enhanced portrait image of the site creator and owner">
                 <div id="back-card">
-                    <div class="option 1"><a href="" class="back-card">About Me</a></div>
-                    <div class="option 2">Hobbies</div>
-                    <div class="option 3">Contact Me</div>
+                    <div class="option 1"><a href="aboutme.html" class="back-card">About Me</a></div>
+                    <div class="option 2"><a href="skillset.html">Skills</a></div>
+                    <div class="option 3"><a href="contactme.html">Contact Me</a></div>
                 </div>
             </div>
         </div>
-        
-        <footer>&copy; 2025 Rashad Jackson</footer>
         <!-- navigation.js builds the nav section, which should be applied to each page in the site for a uniform appearance. -->
         <script src="js/navigation.js"></script>
         <script src="js/moveimage.js"></script>        
